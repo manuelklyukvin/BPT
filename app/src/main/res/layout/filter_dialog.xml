@@ -1,0 +1,69 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    style="@style/root"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_building"
+        style="@style/tv_filter_dialog"
+        android:layout_marginTop="@dimen/indent_normal"
+        android:text="@string/building"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_building"
+        style="@style/spinner_filter_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_building" />
+
+    <TextView
+        android:id="@+id/tv_floor"
+        style="@style/tv_filter_dialog"
+        android:layout_marginTop="@dimen/indent_normal"
+        android:text="@string/floor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_building" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_floor"
+        style="@style/spinner_filter_dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_floor" />
+
+    <LinearLayout
+        android:id="@+id/btn_clear_filters"
+        style="@style/ll_filter_dialog"
+        android:layout_marginEnd="@dimen/indent_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_accept_filters"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_floor">
+
+        <TextView
+            android:id="@+id/tv_clear_filters"
+            style="@style/tv_filter_dialog"
+            android:text="@string/clear_filters"
+            android:textColor="@color/light_blue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_accept_filters"
+        style="@style/ll_filter_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_clear_filters"
+        app:layout_constraintTop_toBottomOf="@id/spinner_floor">
+
+        <TextView
+            android:id="@+id/tv_accept_filters"
+            style="@style/tv_filter_dialog"
+            android:text="@string/accept_filters"
+            android:textColor="@color/light_blue" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

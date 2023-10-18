@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="30dp"
+        android:src="@drawable/logo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_border"
+        style="@style/cv_border"
+        android:layout_below="@id/iv_logo">
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_logo"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/indent_large">
+
+                <TextView
+                    android:id="@+id/tv_navigators"
+                    style="@style/tv_title_main"
+                    android:text="@string/navigator" />
+
+                <GridLayout
+                    android:id="@+id/gl_navigators"
+                    style="@style/gl_main">
+
+                    <LinearLayout
+                        android:id="@+id/ll_search_by_number"
+                        style="@style/ll_main"
+                        android:layout_marginEnd="@dimen/indent_large">
+
+                        <ImageView
+                            android:id="@+id/iv_search_by_number"
+                            style="@style/iv_main"
+                            android:src="@drawable/search_by_number" />
+
+                        <TextView
+                            android:id="@+id/tv_search_by_number"
+                            style="@style/tv_main"
+                            android:text="@string/search_by_number" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_search_by_name"
+                        style="@style/ll_main">
+
+                        <ImageView
+                            android:id="@+id/iv_search_by_name"
+                            style="@style/iv_main"
+                            android:layout_width="48dp"
+                            android:src="@drawable/search_by_name" />
+
+                        <TextView
+                            android:id="@+id/tv_search_by_name"
+                            style="@style/tv_main"
+                            android:text="@string/search_by_name" />
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/tv_education_sites"
+                    style="@style/tv_title_main"
+                    android:text="@string/education_sites" />
+
+                <GridLayout
+                    android:id="@+id/gl_education_sites"
+                    style="@style/gl_main">
+
+                    <LinearLayout
+                        android:id="@+id/ll_home_site"
+                        style="@style/ll_main"
+                        android:layout_marginEnd="@dimen/indent_large"
+                        android:layout_marginBottom="@dimen/indent_large">
+
+                        <ImageView
+                            android:id="@+id/iv_home_site"
+                            style="@style/iv_main"
+                            android:src="@drawable/home_site" />
+
+                        <TextView
+                            android:id="@+id/tv_home_site"
+                            style="@style/tv_main"
+                            android:text="@string/home_site" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_vk_site"
+                        style="@style/ll_main">
+
+                        <ImageView
+                            android:id="@+id/iv_vk_site"
+                            style="@style/iv_main"
+                            android:padding="3dp"
+                            android:src="@drawable/vk_site" />
+
+                        <TextView
+                            android:id="@+id/tv_vk_site"
+                            style="@style/tv_main"
+                            android:text="@string/vk_site" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_diary_site"
+                        style="@style/ll_main"
+                        android:layout_marginEnd="@dimen/indent_large">
+
+                        <ImageView
+                            android:id="@+id/iv_diary_site"
+                            style="@style/iv_main"
+                            android:padding="2dp"
+                            android:src="@drawable/diary_site" />
+
+                        <TextView
+                            android:id="@+id/tv_diary_site"
+                            style="@style/tv_main"
+                            android:text="@string/diary_site" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_distance_site"
+                        style="@style/ll_main">
+
+                        <ImageView
+                            android:id="@+id/iv_distance_site"
+                            style="@style/iv_main"
+                            android:src="@drawable/distance_site" />
+
+                        <TextView
+                            android:id="@+id/tv_distance_site"
+                            style="@style/tv_main"
+                            android:text="@string/distance_site" />
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/tv_timetables"
+                    style="@style/tv_title_main"
+                    android:text="@string/timetable" />
+
+                <GridLayout
+                    android:id="@+id/gl_timetables"
+                    style="@style/gl_main">
+
+                    <LinearLayout
+                        android:id="@+id/ll_specialization_timetable"
+                        style="@style/ll_main"
+                        android:layout_marginEnd="@dimen/indent_large"
+                        android:layout_marginBottom="@dimen/indent_large">
+
+                        <ImageView
+                            android:id="@+id/iv_specialization_timetable"
+                            style="@style/iv_main"
+                            android:src="@drawable/timetable" />
+
+                        <TextView
+                            android:id="@+id/tv_specialization_timetable"
+                            style="@style/tv_main"
+                            android:text="@string/specialization_timetable" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_profession_timetable"
+                        style="@style/ll_main">
+
+                        <ImageView
+                            android:id="@+id/iv_profession_timetable"
+                            style="@style/iv_main"
+                            android:src="@drawable/timetable" />
+
+                        <TextView
+                            android:id="@+id/tv_profession_timetable"
+                            style="@style/tv_main"
+                            android:text="@string/profession_timetable" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_break_timetable"
+                        style="@style/ll_main"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_marginEnd="@dimen/indent_large">
+
+                        <ImageView
+                            android:id="@+id/iv_break_timetable"
+                            style="@style/iv_main"
+                            android:src="@drawable/break_timetable" />
+
+                        <TextView
+                            android:id="@+id/tv_break_timetable"
+                            style="@style/tv_main"
+                            android:text="@string/break_timetable" />
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ========== text_size ========== -->
+
+    <dimen name="text_size_small">16sp</dimen>
+    <dimen name="text_size_normal">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_xlarge">24sp</dimen>
+
+    <!-- ========== indent ========== -->
+
+    <dimen name="indent_small">5dp</dimen>
+    <dimen name="indent_normal">10dp</dimen>
+    <dimen name="indent_large">15dp</dimen>
+
+    <!-- ========== elevation ========== -->
+
+    <dimen name="elevation_normal">5dp</dimen>
+
+</resources>

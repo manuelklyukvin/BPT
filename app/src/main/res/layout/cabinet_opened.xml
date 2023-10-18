@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    style="@style/root"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/indent_normal"
+    android:paddingVertical="@dimen/indent_large">
+
+    <TextView
+        android:id="@+id/op_number"
+        style="@style/op_cabinet_opened"
+        android:layout_width="match_parent"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/text_size_xlarge" />
+
+    <TextView
+        android:id="@+id/op_name"
+        style="@style/op_cabinet_opened"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_building"
+        style="@style/ll_cabinet_opened">
+
+        <TextView
+            android:id="@+id/tv_building"
+            style="@style/tv_cabinet_opened"
+            android:text="@string/building" />
+
+        <TextView
+            android:id="@+id/op_building"
+            style="@style/op_cabinet_opened" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_floor"
+        style="@style/ll_cabinet_opened">
+
+        <TextView
+            android:id="@+id/tv_floor"
+            style="@style/tv_cabinet_opened"
+            android:text="@string/floor" />
+
+        <TextView
+            android:id="@+id/op_floor"
+            style="@style/op_cabinet_opened" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_part"
+        style="@style/ll_cabinet_opened">
+
+        <TextView
+            android:id="@+id/tv_part"
+            style="@style/tv_cabinet_opened"
+            android:text="@string/part" />
+
+        <TextView
+            android:id="@+id/op_part"
+            style="@style/op_cabinet_opened" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_side"
+        style="@style/ll_cabinet_opened">
+
+        <TextView
+            android:id="@+id/tv_side"
+            style="@style/tv_cabinet_opened"
+            android:text="@string/side" />
+
+        <TextView
+            android:id="@+id/op_side"
+            style="@style/op_cabinet_opened" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_door"
+        style="@style/ll_cabinet_opened">
+
+        <TextView
+            android:id="@+id/tv_door"
+            style="@style/tv_cabinet_opened"
+            android:text="@string/door" />
+
+        <TextView
+            android:id="@+id/op_door"
+            style="@style/op_cabinet_opened" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_remark"
+        style="@style/op_cabinet_opened"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/indent_normal"
+        android:text="@string/remark"
+        android:textSize="@dimen/text_size_small"
+        android:visibility="gone" />
+
+</LinearLayout>

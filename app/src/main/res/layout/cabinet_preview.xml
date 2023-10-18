@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    style="@style/root"
+    android:minHeight="90dp"
+    android:padding="@dimen/indent_normal">
+
+    <TextView
+        android:id="@+id/op_number"
+        style="@style/tv_cabinet_preview"
+        android:singleLine="true"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/text_size_xlarge"
+        app:layout_constraintBottom_toTopOf="@id/op_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/op_name"
+        style="@style/tv_cabinet_preview"
+        android:layout_marginEnd="@dimen/indent_normal"
+        android:singleLine="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_floor"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/op_number" />
+
+    <TextView
+        android:id="@+id/tv_building"
+        style="@style/tv_cabinet_preview"
+        android:layout_marginEnd="@dimen/indent_small"
+        android:text="@string/building"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toTopOf="@id/tv_floor"
+        app:layout_constraintEnd_toStartOf="@id/op_building"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/op_building"
+        style="@style/tv_cabinet_preview"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_building"
+        app:layout_constraintBottom_toTopOf="@id/op_floor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_floor"
+        style="@style/tv_cabinet_preview"
+        android:layout_marginEnd="@dimen/indent_small"
+        android:text="@string/floor"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/op_floor"
+        app:layout_constraintTop_toBottomOf="@id/tv_building" />
+
+    <TextView
+        android:id="@+id/op_floor"
+        style="@style/tv_cabinet_preview"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_floor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/op_building" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

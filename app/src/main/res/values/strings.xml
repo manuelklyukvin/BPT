@@ -1,0 +1,40 @@
+<resources>
+
+    <string name="app_name">БПТ</string>
+
+    <string name="navigator">Поиск кабинетов</string>
+    <string name="search_by_number">По номеру</string>
+    <string name="search_by_name">По названию</string>
+
+    <string name="education_sites">Учебные сайты</string>
+    <string name="home_site">Сайт БПТ</string>
+    <string name="vk_site">Группа БПТ в VK</string>
+    <string name="diary_site">ЭПОС</string>
+    <string name="distance_site">Дистант</string>
+
+    <string name="timetable">Расписания</string>
+    <string name="specialization_timetable">ПССЗ</string>
+    <string name="profession_timetable">ПКРиС</string>
+    <string name="break_timetable">Звонки</string>
+
+    <string name="home_site_url">https://berpt.ru/</string>
+    <string name="vk_site_url">https://vk.com/berptt</string>
+    <string name="diary_site_url">https://school.permkrai.ru/</string>
+    <string name="distance_site_url">http://dist.berpt.ru/</string>
+    <string name="specialization_timetable_url">https://berpt.ru/spo/prepodavatelskij-sostav/raspisanie-uchebnykh-zanyatij</string>
+    <string name="profession_timetable_url">https://berpt.ru/spo/spo-2/raspisanie-uchebnykh-zanyatij</string>
+    <string name="break_timetable_url">https://berpt.ru/spo/prepodavatelskij-sostav/raspisanie-zvonkov</string>
+
+    <string name="number">Кабинет:</string>
+    <string name="building">Корпус:</string>
+    <string name="floor">Этаж:</string>
+    <string name="part">Часть здания:</string>
+    <string name="side">Сторона коридора:</string>
+    <string name="door">Дверь по счёту:</string>
+    <string name="no_results">Результатов не найдено</string>
+    <string name="remark">(Счёт дверей идёт от выхода из перехода между корпусами)</string>
+
+    <string name="accept_filters">Применить</string>
+    <string name="clear_filters">Сбросить</string>
+
+</resources>
